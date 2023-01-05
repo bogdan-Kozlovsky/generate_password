@@ -1,0 +1,24 @@
+.settings {
+
+  &__title {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f0f2f5;
+
+    @media (max-width: 500px) {
+      font-size: 22px;
+      line-height: 25px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -30px;
+
+    > div {
+      margin: 0 30px 15px 30px;
+    }
+  }
+}
