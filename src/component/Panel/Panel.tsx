@@ -1,5 +1,7 @@
 import React, { ReactElement, useState } from 'react';
 
+import { Tooltip as ReactTooltip } from 'react-tooltip';
+
 import iconGenerate from '../../assets/icons/icon-generate-new.svg';
 import { ArrayType, PasswordType } from '../../types';
 import { CheckmarkRound } from '../common/CheckmarkRound';
@@ -27,7 +29,7 @@ const Panel = ({
       setCopied(true);
       setInterval(() => {
         setCopied(false);
-      }, 2000);
+      }, 3000);
     }
   };
 
@@ -76,16 +78,28 @@ const Panel = ({
           autoComplete="off"
           onChange={event => setHandePassword(event.target.value)}
         />
-        <button className={styles.panel__button_generate} onClick={generatePassword}>
+        <button
+          id="icon-generate-new"
+          className={styles.panel__button_generate}
+          onClick={generatePassword}
+        >
           <img
             className={` ${isRotated ? styles.panel__rotate : ''}`}
             src={iconGenerate}
             alt="icon-generate-new"
           />
+
+          <ReactTooltip
+            className="tooltip"
+            anchorId="icon-generate-new"
+            content="Generate"
+            place="top"
+          />
         </button>
-        <button className={styles.panel__button_copy} onClick={onCopyClick}>
+        <button id="copy" className={styles.panel__button_copy} onClick={onCopyClick}>
           {copied ? <Copy /> : <CheckmarkRound />}
         </button>
+        <ReactTooltip className="tooltip" anchorId="copy" content="Copy" place="top" />
       </div>
     </div>
   );

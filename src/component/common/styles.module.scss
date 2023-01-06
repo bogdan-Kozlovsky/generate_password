@@ -1,0 +1,21 @@
+.radio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 10px;
+
+  &__icon {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+}
+
+.checkbox {
+
+  &__label {
+    display: block;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+}
