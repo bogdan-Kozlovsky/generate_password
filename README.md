@@ -33,10 +33,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 Developing todo lists using react and redux 🥥🥥🥥
 
-![ScreenShot](https://raw.github.com/bogdan-Kozlovsky/generate_password/master/src/assets/screenshots/1.png)
 
-# Counter
 
-Simple counter designed with react and settings 🖇🖇🖇
-
-![ScreenShot](https://raw.github.com/vasyok28/Counter/main/src/screenshots/1.png)
